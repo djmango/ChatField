@@ -13,7 +13,7 @@ public struct CapsuleChatFieldStyle: TextFieldStyle {
     
     public func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
-            .padding(.vertical, 6)
+            .padding(.vertical, 8)
             .padding(.horizontal, 12)
             .textFieldStyle(.plain)
             .clipShape(ClipShape())
@@ -26,6 +26,6 @@ public struct CapsuleChatFieldStyle: TextFieldStyle {
     
     @ViewBuilder
     private func ClipShape() -> some Shape {
-        RoundedRectangle(cornerRadius: 20, style: .continuous)
+        RoundedRectangle(cornerRadius: 8, style: .continuous)
     }
 }
